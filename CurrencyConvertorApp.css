@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    font-family: "Open Sans", sans-serif;
+   
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100vh;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 500px;
+    
+}
+.f1{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color:rgb(27, 51, 208)
+}
+.to2{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.f1 label
+{
+    color:rgb(104, 60, 153);
+    font-family:fantasy;
+    font-size: 25px;
+}
+.to2 label{
+    color:rgb(104, 60, 153);
+    font-family:fantasy;
+    font-size: 25px;
+}
+.container h1 {
+    text-align: center;
+    font-size: 2rem; /* Adjust the size as needed */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    padding-left: 80px;
+  }
+  .result{
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid burlywood;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+    color:red;
+  }
+  .input label{
+    color:rgb(104, 60, 153);
+    font-family:fantasy;
+    font-size: 25px;
+  }
+  .images img {
+    width: 300px; /* Adjust to your desired width */
+    height: auto; /* Maintains aspect ratio */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* Centers the image */
+    padding-left: 150px;
+}
+.allinputs{
+    border:4px solid rgb(243, 130, 9);
+    border-radius: 2px;
+    padding: 20px;
+    width:500px;
+    background-image: url("https://thumbs.dreamstime.com/b/color-money-background-stationery-739106.jpg");
+}
+.input{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 20px;
+  
+}
+/* Increase the height and width of the input boxes and change the border color */
+input[type="number"], select {
+    padding: 12px 18px; /* Increased padding for more height */
+    font-size: 16px; /* Keep font size as is */
+    border: 2px solid #ff7f50; /* Changed border color to coral */
+    border-radius: 5px; /* Keep border radius */
+    width: 100%; /* Ensures full width input */
+    transition: border-color 0.3s ease; /* Smooth transition when focused */
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #4b0082; /* Changed focus border color to indigo */
+}
