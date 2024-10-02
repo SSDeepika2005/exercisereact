@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", system-ui;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.root-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* First row of two cards */
+.row {
+    display: flex;
+    gap: 40px; /* Spacing between the two cards */
+    justify-content: center; /* Center the cards horizontally */
+    width: 100%;
+}
+
+/* Third card centered below the first two */
+.center-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Card container styling */
+.card-container {
+    background-color: #1B1F3B;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+/* Profile image styling */
+.card-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/* Skills section styling */
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 6px;
+    margin: 0 7px 7px 0;
+    font-size: 12px;
+}
+
+/* Online/Offline status */
+.pro {
+    color: black;
+    background-color: green;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.online {
+    background-color: chartreuse;
+}
+
+.offline {
+    background-color: rgb(237, 174, 17);
+}
+
+/* Skills container background color */
+.skills {
+    background-color: #25208d;
+    text-align: left;
+    padding: 15px;
+    margin-top: 15px;
+}
