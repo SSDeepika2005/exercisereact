@@ -1,0 +1,62 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Faq-bodycontent{
+    border-radius: 8px;
+    border: 5px solid silver;
+}
+.faq-container{
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    overflow: hidden;
+}
+.FaqQuestion{
+    background-color: rgb(255, 245, 238);
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(22, 3, 3);
+    transition: background-color 0.3s ease;
+}
+.FaqQuestion:hover{
+    
+    background-color: rgb(243, 229, 171);
+}
+.Faqbody{
+    padding-bottom: 15px;
+}
+
+.FaqAnswer{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.faqbody.active .FaqAnswer{
+    max-height: 300px;
+}
+
+.FaqAnswer-content{
+    padding: 15px;
+    background-color: rgb(233, 220, 201);
+     /* Background color for the answer box */
+    color: rgb(33, 33, 33); /* Darker text color for contrast */
+    border-radius: 5px;
+}
+
+.bcgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send background behind content */
+}
+  
+.bcgimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the full screen */
+}
