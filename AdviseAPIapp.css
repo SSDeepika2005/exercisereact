@@ -1,0 +1,16 @@
+.container{
+    
+        width: 100vw; 
+        height: 100vh; 
+        text-align: center;
+        background-size: contain; /* Adjusts image to fit within container */
+        background-position: bottom center;
+        
+        background-size: cover;
+        background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+   text-align: center;
+   padding-top: 270px;
+background-color:#DDA0DD;  
+}
