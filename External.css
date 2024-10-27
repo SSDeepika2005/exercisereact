@@ -1,0 +1,75 @@
+/* Main container that holds everything */
+.flex-containerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f1f1f1; /* Light background color */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+}
+
+/* Styling for each box */
+.inner-box {
+    background-color:  #967BB6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    width: 400px;
+   
+    
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Counter button styling */
+.butcolor {
+    background-color: #7ec3db;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 0 10px; /* Space between buttons */
+}
+
+/* Button hover effect */
+.butcolor:hover {
+    background-color: rgb(73, 170, 203);
+}
+
+/* Counter number styling */
+.counter-number {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Align buttons and number horizontally */
+}
+
+/* Custom font styles */
+.font-lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.light-text {
+    font-family: 'Dancing Script', cursive;
+    line-height: 1.6;
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove any extra margin */
+}
