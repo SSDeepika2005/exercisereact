@@ -1,75 +1,78 @@
-/* Main container that holds everything */
-.flex-containerdiv {
+/* Flex Container */
+.flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    background-color: #f1f1f1; /* Light background color */
-    flex-direction: column; /* Stack elements vertically */
-    padding: 20px;
+    flex-direction: column; /* Stack boxes vertically */
+    justify-content: flex-start; /* Align boxes to the top */
+    align-items: center; /* Center boxes horizontally */
+    gap: 20px; /* Space between the boxes */
+    padding: 20px; /* Adds padding inside the flex container */
+    background-color: #f1f1f1; /* Background color for the container */
+    min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
 }
 
-/* Styling for each box */
-.inner-box {
-    background-color:  #967BB6;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-bottom: 20px;
-    width: 400px;
-   
-    
+/* Inner Box and Props Box */
+.inner-box, .props {
+    background-color: #967BB6; /* Background color */
+    padding: 20px; /* Space inside the box */
+    border-radius: 10px; /* Curved corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers text inside the box */
+    width: 300px; /* Fixed width for consistency */
+    min-height: 400px; /* Ensures boxes have the same minimum height */
+    display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: space-between; /* Space out content vertically */
 }
 
-/* Counter button styling */
-.butcolor {
-    background-color: #7ec3db;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    color: white;
-    margin: 0 10px; /* Space between buttons */
+/* List Box and Prop List Box */
+.list-box, .prop {
+    background-color: #ADD8E6; /* Background color */
+    padding: 15px; /* Space inside the list box */
+    border-radius: 8px; /* Curved corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    margin-top: 20px; /* Space above the list box */
+    flex-grow: 1; /* Make the list box grow to fill available space */
 }
 
-/* Button hover effect */
-.butcolor:hover {
-    background-color: rgb(73, 170, 203);
+/* Unordered List Styling */
+.list-box ul, .prop ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes padding around the list */
+    margin: 0; /* Removes margin around the list */
+    background-color: #7ec3db; /* Matching background color */
 }
 
-/* Counter number styling */
-.counter-number {
-    font-weight: bold;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row; /* Align buttons and number horizontally */
+/* List Items Styling */
+.list-box li, .prop li {
+    padding: 10px; /* Space inside each list item */
+    border-bottom: 1px solid #ddd; /* Adds a divider between list items */
+    font-family: 'Georgia', serif; /* Consistent font style */
+    font-size: 16px; 
+    color: #333; /* Text color */
 }
 
-/* Custom font styles */
-.font-lobster {
-    font-family: 'Lobster', cursive;
+/* Remove Divider for Last Item */
+.list-box li:last-child, .prop li:last-child {
+    border-bottom: none; /* Removes the divider from the last item */
 }
 
+/* Font Styling */
 .font {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive; /* Cursive font for headings */
 }
 
-.light-text {
-    font-family: 'Dancing Script', cursive;
-    line-height: 1.6;
-    text-align: center; /* Center the text */
-    margin: 0; /* Remove any extra margin */
+/* Button Styling */
+button {
+    margin-bottom: 10px; /* Space below the button */
+    padding: 10px 15px; /* Padding inside the button */
+    background-color: #5A9; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #48a; /* Darker button color on hover */
 }
